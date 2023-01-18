@@ -19,6 +19,7 @@ INT PRIMARY KEY AUTO_INCREMENT   VARCHAR(50)	         VARCHAR(30)	       DECIMAL
     from book
     group by author;
 
+
 3. Вывести фамилию и инициалы автора, минимальную, максимальную и среднюю цену книг каждого автора . Вычисляемые столбцы назвать Минимальная_цена, Максимальная_цена и Средняя_цена соответственно.
     select author as Автор, count(title) as Различных_книг, sum(amount) as Количество_экземпляров  
     from book
