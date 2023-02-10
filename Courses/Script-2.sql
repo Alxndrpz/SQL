@@ -33,6 +33,7 @@ join roles_employee on
 roles_employee.employee_id = employees.id 
 join roles 
 on roles_employee.role_id = roles.id
+
 where roles.role_name like '%Java %';
 
 
@@ -347,9 +348,3 @@ join roles on
 roles_employee.role_id = roles.id 
 where monthly_salary in (1100, 1500, 2000)
 order by 3 asc;
-
-
-
-
-
-
